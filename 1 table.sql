@@ -1,5 +1,6 @@
 drop table if exists Bike 
 go 
+
 create table dbo.Bike(
     SaleId int not null identity primary key,
     CustomerName varchar(30) not null constraint c_Bike_customer_name_cannot_be_blank check(CustomerName <> ''),
